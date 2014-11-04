@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-md-12">
+		<table ng-table="tableParams" class="table table-striped table-bordered">
+			<tr ng-repeat="node in $data">
+				<td data-title="'Username'">{{node.userName}}</td>
+				<td data-title="'First name'">{{node.firstName}}</td>
+				<td data-title="'Last name'">{{node.lastName}}</td>
+				<td data-title="'Email'">{{node.email}}</td>
+				<td data-title="'Disabled'">{{ node.disabled ? 'Yes' : 'No' }}</td>
+      </tr>
+		</table>
+	</div>
+</div>
